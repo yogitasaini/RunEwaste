@@ -34,9 +34,9 @@ const Loadingpage = () => {
             RunEWaste <span style={{ color: "#f64c71" }} />
           </h3>
           <p style={{ fontSize: "1.2rem" }}>
-            Our Webpage helps a user to Buy and Sell Ewaste and provide a user
-            friendly experience to trade as well as Solve a big problem on
-            earth.{" "}
+            Our Webpage helps user to Buy and Sell Ewaste and provide user
+            friendly experience to trade as well as Solve a big problem on earth
+            of Ewaste.{" "}
           </p>
           <NavLink
             to={`/LandingPage`}

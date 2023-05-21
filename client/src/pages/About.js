@@ -17,12 +17,17 @@ const About = () => {
             className="text-justify mt-2"
             style={{ marginTop: "10%", marginLeft: "5%" }}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            officiis obcaecati esse tempore unde ratione, eveniet mollitia,
-            perferendis eius temporibus dicta blanditiis doloremque explicabo
-            quasi sunt vero optio cum aperiam vel consectetur! Laborum enim
-            accusantium atque, excepturi sapiente amet! Tenetur ducimus aut
-            commodi illum quidem neque tempora nam.
+            <h3>Mission of this project:</h3>
+            Our mission is to responsibly manage electronic waste by promoting
+            proper disposal methods, reducing its generation, and increasing
+            awareness about the environmental impact of e-waste.
+            <h3>About Our model:</h3>
+            Our model Provides The user with Two options, The User can visit our
+            model and list their spare electronic waste item on our website via
+            the 7 step easy process. OR The user can visit our website to scroll
+            for buying the spare working parts of the Electronic waste listed.
+            Besides Buying and selling of the spare electronic waste item, our
+            model also validates the E-waste item using ML.
           </p>
         </div>
       </div>

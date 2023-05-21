@@ -56,7 +56,7 @@
 
   bottom: 0;
   width: 100%;
-
+  border-top: 1px solid #e22454;
   padding: 25px;
   background: #ffffff; /* fallback for old browsers */
 
