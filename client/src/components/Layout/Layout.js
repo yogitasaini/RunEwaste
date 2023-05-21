@@ -6,9 +6,11 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Layout = (props) => {
   return (
-    <div>
+    <div
+      style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
+    >
       <Header />
-      <main style={{ minHeight: "70vh" }}>
+      <main style={{ flex: 1, minHeight: "70vh" }}>
         <Toaster />
         {props.children}
       </main>

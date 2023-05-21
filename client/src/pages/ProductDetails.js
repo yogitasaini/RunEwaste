@@ -95,7 +95,9 @@ const ProductDetails = () => {
                 <div className="card-name-price">
                   <button
                     className="btn btn-info ms-1"
+                    style={{ backgroundColor: " #e22454" }}
                     onClick={() => navigate(`/product/${p.slug}`)}
+                    style={{ backgroundColor: " #e22454" }}
                   >
                     More Details
                   </button>
