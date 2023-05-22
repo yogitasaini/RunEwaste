@@ -110,7 +110,7 @@ const HomePage = () => {
     <Layout title={"ALl Products - Best offers "}>
       {/* banner image */}
       <img
-        src="/images/banner.png"
+        src="/images/baner.jpg"
         className="banner-img"
         alt="bannerimage"
         width={"100%"}
@@ -150,7 +150,7 @@ const HomePage = () => {
           </div>
         </div>
         <div className="col-md-9 ">
-          <h1 className="text-center" style={{ marginRight: "30%" }}>
+          <h1 className="text-center" style={{ marginRight: "0%" }}>
             All Products
           </h1>
           <div className="d-flex flex-wrap">
@@ -161,6 +161,7 @@ const HomePage = () => {
                   className="card-img-top"
                   alt={p.name}
                 />
+
                 <div className="card-body">
                   <div className="card-name-price">
                     <h5 className="card-title">{p.name}</h5>
@@ -178,6 +179,7 @@ const HomePage = () => {
                     <button
                       className="btn btn-info ms-1"
                       onClick={() => navigate(`/product/${p.slug}`)}
+                      style={{ backgroundColor: " #e22454", color: "#ffffff" }}
                     >
                       More Details
                     </button>

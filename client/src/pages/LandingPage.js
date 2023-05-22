@@ -9,7 +9,7 @@ const Loadingpage = () => {
 
   return (
     <Layout title={"RunEWaste"}>
-      <div style={{ backgroundColor: "#f9f9f9" }}>
+      <div style={{ backgroundColor: "#ffffff" }}>
         {/* home section ends */}
         {/* features section starts  */}
         <section
@@ -26,7 +26,7 @@ const Loadingpage = () => {
                 marginTop: "1.5%",
                 width: "30%",
                 height: "30%",
-                borderRadius: "25px",
+                borderRadius: "35px",
               }}
             />
           </div>
@@ -34,15 +34,15 @@ const Loadingpage = () => {
             RunEWaste <span style={{ color: "#f64c71" }} />
           </h3>
           <p style={{ fontSize: "1.2rem" }}>
-            Our Webpage helps a user to Buy and Sell Ewaste and provide a user
-            friendly experience to trade as well as Solve a big problem on
-            earth.{" "}
+            Our Webpage helps user to Buy and Sell Ewaste and provide user
+            friendly experience to trade as well as Solve a big problem on earth
+            of Ewaste.{" "}
           </p>
           <NavLink
-            to="/"
+            to={`/LandingPage`}
             className="btn"
             style={{
-              backgroundColor: "#f64c71",
+              backgroundColor: "#e22454",
               color: "#fff",
               padding: "12px 30px",
               marginRight: "10px",
@@ -58,13 +58,13 @@ const Loadingpage = () => {
           </NavLink>
           {!auth?.user ? (
             <NavLink
-              to="/login"
+              to={`/login`}
               className="btn"
               style={{
-                backgroundColor: "#f64c71",
+                backgroundColor: "#e22454",
                 color: "#fff",
                 padding: "12px 30px",
-                borderRadius: "29px",
+                borderRadius: "18px",
                 fontSize: "1.2rem",
                 textDecoration: "none",
                 width: "195px",
@@ -82,7 +82,7 @@ const Loadingpage = () => {
                 backgroundColor: "#f64c71",
                 color: "#fff",
                 padding: "12px 30px",
-                borderRadius: "29px",
+                borderRadius: "18px",
                 fontSize: "1.2rem",
                 width: "200px",
                 textDecoration: "none",

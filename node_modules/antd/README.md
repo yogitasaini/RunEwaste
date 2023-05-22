@@ -45,7 +45,7 @@ An enterprise-class UI design language and React UI library.
 
 [![](https://user-images.githubusercontent.com/507615/209472919-6f7e8561-be8c-4b0b-9976-eb3c692aa20a.png)](https://ant.design)
 
-English | [Português](./README-pt_BR.md) | [简体中文](./README-zh_CN.md) | [Українською](./README-uk_UA.md) | [Spanish](./README-sp_MX.md) | [日本語](./README-ja_JP.md)
+English | [Português](./README-pt_BR.md) | [简体中文](./README-zh_CN.md) | [Українською](./README-uk_UA.md) | [Spanish](./README-sp_MX.md) | [日本語](./README-ja_JP.md) | [العربية](./README-ar_EG.md)
 
 ## ✨ Features
 
@@ -54,7 +54,7 @@ English | [Português](./README-pt_BR.md) | [简体中文](./README-zh_CN.md) | 
 - 🛡 Written in TypeScript with predictable static types.
 - ⚙️ Whole package of design resources and development tools.
 - 🌍 Internationalization support for dozens of languages.
-- 🎨 Powerful theme customization in every detail.
+- 🎨 Powerful theme customization based on CSS-in-JS.
 
 ## 🖥 Environment Support
 

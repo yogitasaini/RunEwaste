@@ -13,7 +13,9 @@
   }
   .home-page .card {
     background-color: rgba(128, 128, 128, 0.097);
-    width: 18rem;
+    width: 26rem;
+
+    box-sizing: border-box;
   }
   .home-page .card-name-price {
     display: flex;
@@ -22,16 +24,17 @@
   }
   
   .home-page .card-price {
-    color: green;
+    color:#e22454;
     font-weight: bold;
   }
   .home-page button {
     border-radius: 0;
     width: 100%;
-    border-top-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-top-left-radius: 1px;
+    border-bottom-right-radius: 1px;
     font-size: 14px;
     font-weight: bold;
+   
   }
   
   .home-page .card-text {
@@ -67,7 +70,7 @@
   }
   
   .filters button {
-    background-color: black;
+    background-color:#e22454;
     width: 100%;
     border: none;
     border-radius: 0;
@@ -75,7 +78,7 @@
   }
   
   .loadmore {
-    color: green;
+    color:#e22454;
     font-weight: bold;
     font-size: 20px !important;
   }

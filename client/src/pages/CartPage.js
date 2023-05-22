@@ -19,30 +19,23 @@ const CartPage = () => {
 
   //total price
   const totalPrice = () => {
-    try {
+    if (cart) {
       let total = 0;
-      cart?.map((item) => {
+      cart.forEach((item) => {
         total = total + item.price;
       });
       return total.toLocaleString("en-US", {
         style: "currency",
         currency: "USD",
       });
-    } catch (error) {
-      console.log(error);
     }
+    return "$0.00";
   };
   //detele item
   const removeCartItem = (pid) => {
-    try {
-      let myCart = [...cart];
-      let index = myCart.findIndex((item) => item._id === pid);
-      myCart.splice(index, 1);
-      setCart(myCart);
-      localStorage.setItem("cart", JSON.stringify(myCart));
-    } catch (error) {
-      console.log(error);
-    }
+    const updatedCart = cart.filter((item) => item._id !== pid);
+    setCart(updatedCart);
+    localStorage.setItem("cart", JSON.stringify(updatedCart));
   };
 
   //get payment gateway token

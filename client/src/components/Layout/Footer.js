@@ -1,12 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <div className="footer" style={{ paddingBottom: "0%" }}>
-      <h1 className="text-center">All Right Reserved &copy; RunEWaste</h1>
+      <h1 className="text-center">All Rights Reserved &copy; RunEWaste</h1>
       <p className="text-center">
-        <Link to="/about">About</Link>|<Link to="/contact">Contact</Link>|
-        <Link to="/policy">Privacy Policy</Link>
+        <Link to="/about" className="footer-link">
+          About
+        </Link>{" "}
+        |{" "}
+        <Link to="/contact" className="footer-link">
+          Contact
+        </Link>{" "}
+        |{" "}
+        <Link to="/policy" className="footer-link">
+          Privacy Policy
+        </Link>
       </p>
     </div>
   );
