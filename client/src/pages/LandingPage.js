@@ -1,14 +1,13 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
-import Layout from "./../components/Layout/Layout";
+import { NavLink } from "react-router-dom";
+import Layout from "../components/Layout/Layout";
 import { useAuth } from "../context/auth";
-import toast from "react-hot-toast";
 
 const Loadingpage = () => {
   const [auth, setAuth] = useAuth();
 
   return (
-    <Layout title={"RunEWaste"}>
+    <Layout title="RunEWaste" hideHeader={true}>
       <div style={{ backgroundColor: "#ffffff" }}>
         {/* home section ends */}
         {/* features section starts  */}
@@ -39,7 +38,7 @@ const Loadingpage = () => {
             of Ewaste.{" "}
           </p>
           <NavLink
-            to={`/LandingPage`}
+            to="/LandingPage"
             className="btn"
             style={{
               backgroundColor: "#e22454",
@@ -58,7 +57,7 @@ const Loadingpage = () => {
           </NavLink>
           {!auth?.user ? (
             <NavLink
-              to={`/login`}
+              to="/login"
               className="btn"
               style={{
                 backgroundColor: "#e22454",
@@ -76,7 +75,7 @@ const Loadingpage = () => {
             </NavLink>
           ) : (
             <NavLink
-              to={`/dashboard/admin`}
+              to="/dashboard/admin"
               className="btn"
               style={{
                 backgroundColor: "#f64c71",
@@ -94,7 +93,6 @@ const Loadingpage = () => {
             </NavLink>
           )}
         </section>
-
         {/* features section ends */}
       </div>
     </Layout>
