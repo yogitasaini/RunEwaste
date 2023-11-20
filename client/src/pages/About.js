@@ -3,20 +3,19 @@ import Layout from "./../components/Layout/Layout";
 
 const About = () => {
   return (
-    <Layout title={"About us - Ecommer app"}>
-      <div className="row contactus ">
-        <div className="col-md-6 ">
+    <Layout title={"About us - RUNEWASTE app"}>
+      <div className="row contactus mt-4">
+        <div className="overflow-hidden col-md-4 ">
           <img
             src="/images/about.jpeg"
             alt="contactus"
-            style={{ marginTop: "8%", width: "80%", paddingBottom: "30%" }}
+            style={{width: "100%" }}
           />
         </div>
-        <div className="col-md-4">
+        <div className="overflow-hidden col-md-6">
           <p
-            className="text-justify mt-2"
-            style={{ marginTop: "10%", marginLeft: "5%" }}
-          >
+            className="text-justify mt-3">
+              
             <h3>Mission of this project:</h3>
             Our mission is to responsibly manage electronic waste by promoting
             proper disposal methods, reducing its generation, and increasing
