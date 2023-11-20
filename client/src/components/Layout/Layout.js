@@ -4,15 +4,15 @@ import Footer from "./Footer";
 import { Toaster } from "react-hot-toast";
 import "react-toastify/dist/ReactToastify.css";
 
-const Layout = (props) => {
+const Layout = ({ hideHeader, children }) => {
   return (
     <div
       style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
     >
-      <Header />
+      {!hideHeader && <Header />}
       <main style={{ flex: 1, minHeight: "70vh" }}>
         <Toaster />
-        {props.children}
+        {children}
       </main>
       <Footer />
     </div>

@@ -8,12 +8,10 @@ const Footer = () => {
       <p className="text-center">
         <Link to="/about" className="footer-link">
           About
-        </Link>{" "}
-        |{" "}
+        </Link>
         <Link to="/contact" className="footer-link">
           Contact
-        </Link>{" "}
-        |{" "}
+        </Link>
         <Link to="/policy" className="footer-link">
           Privacy Policy
         </Link>

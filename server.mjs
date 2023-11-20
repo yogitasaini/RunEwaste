@@ -6,12 +6,20 @@ import authRoutes from "./routes/authRoute.js";
 import categoryRoutes from "./routes/categoryRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
 import cors from "cors";
+import path from "path";
 
 dotenv.config();
 
 connectDB();
 
 const app = express();
+
+// static file
+app.use(express.static(path.join(__dirname, "./client/build")));
+
+app.get("*", (req, res) => {
+res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
 
 //middlewares
 app.use(cors());
@@ -24,15 +32,15 @@ app.use("/api/v1/category", categoryRoutes);
 app.use("/api/v1/product", productRoutes);
 
 app.get("/", (req, res) => {
-  res.send({
-    message: "Welcome guys",
-  });
+res.send({
+message: "Welcome guys",
+});
 });
 
 const PORT = process.env.PORT || 8000;
 
 app.listen(PORT, () => {
-  console.log("server is running successfully");
+console.log("server is running successfully");
 });
 
 // abgsbhdonfgns
