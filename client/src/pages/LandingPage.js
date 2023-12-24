@@ -8,9 +8,8 @@ const Loadingpage = () => {
 
   return (
     <Layout title="RunEWaste" hideHeader={true}>
-      <div style={{ backgroundColor: "#ffffff" }}>
-        {/* home section ends */}
-        {/* features section starts  */}
+
+      <div className="mt-0"style={{ backgroundColor: "#ffffff" }}>
         <section
           className="home"
           id="home"
@@ -33,9 +32,7 @@ const Loadingpage = () => {
             RunEWaste <span style={{ color: "#f64c71" }} />
           </h3>
           <p style={{ fontSize: "1.2rem" }}>
-            Our Webpage helps user to Buy and Sell Ewaste and provide user
-            friendly experience to trade as well as Solve a big problem on earth
-            of Ewaste.{" "}
+          Empowering Change, One Click at a Time: Your Ultimate Destination to Buy, Sell, and Make a Difference with E-Waste – Transforming Transactions, Resolving the E-Waste Dilemma.
           </p>
           <NavLink
             to="/LandingPage"
